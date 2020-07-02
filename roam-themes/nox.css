@@ -244,6 +244,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
 }
 
 /* !!!!! Un-comment the section below to maximize page width, line length, and images widths (grabbed from Jeff Harris's Railcast theme)  —— Just know it creates display issues in the graph! */
+/*
 .roam-block-container {
     max-width: 100% !important;
 }
@@ -265,7 +266,7 @@ div.roam-center > div:first-child {
 .hoverparent[style^="position: relative; width: 720px;"] {
     width: 100% !important;
 }
-
+*/
 
 /*                     END OF CONTENT PADDING & WIDTH                          */
 /* --------------------------------------------------------------------------- */
