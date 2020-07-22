@@ -3,9 +3,10 @@
 Theme:      Roam Nox Theme
 Edits by:   Cal Robert Lee (https://www.calrobert.com/)
 Colors by:  Cal Robert Lee
-Version:    v2.1.6
+Version:    v2.2.0
+Mirror:     https://raw.githubusercontent.com/calrobertlee/roam-css-styles/master/Nox.css
 
-Quickfix:   - Added embed block bg color & fixed search selected row color
+Quickfix:   - Fixed left sidebar z-index (to prevent from blocking search input)
 
 Updates:    - Added centered search popup using code from Azlen Elza's Zenith theme — code starts around line 1174
             - Edited colors for almost all elements
@@ -40,7 +41,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --highlight-font-color: #F4F4F4;
     --highlight-background-color: #34641F;
     --highlight-link-color: #F4F4F4;
-    --highlight-padding: 5px 5px 4px 5px;
+    --highlight-padding: 4px 5px 4px 5px;
     --reference-header-color: #2a323a;
     --sidebar-font-color: #696969;
     --sidebar-font-color-hover: #8f8f8f;
@@ -199,6 +200,9 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --encrypted-font-weight: 300;
     --encrypted-border-radius: 4px;
     --encrypted-padding: 2px 4px;
+    
+    --select-bg-color: #1E2022;
+    --select-border-color: #3a3f44;
 
     --emoji-bg: #1f2830;
     --emoji-border: 0px solid none;
@@ -244,7 +248,6 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
 }
 
 /* !!!!! Un-comment the section below to maximize page width, line length, and images widths (grabbed from Jeff Harris's Railcast theme)  —— Just know it creates display issues in the graph! */
-/*
 .roam-block-container {
     max-width: 100% !important;
 }
@@ -266,7 +269,7 @@ div.roam-center > div:first-child {
 .hoverparent[style^="position: relative; width: 720px;"] {
     width: 100% !important;
 }
-*/
+
 
 /*                     END OF CONTENT PADDING & WIDTH                          */
 /* --------------------------------------------------------------------------- */
@@ -369,6 +372,7 @@ div.roam-center > div:first-child {
 .roam-body .roam-app .roam-sidebar-container {
     background-color: var(--left-sidebar-bg);
     border-right: var(--left-sidebar-border-right);
+    z-index: -1; /* added to prevent from blocking search input */
 }
 /* adds padding to left sidebar contents */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content > div:nth-child(2) {
@@ -408,7 +412,6 @@ span.bp3-icon-small.bp3-icon-star {
     font-size: 12px !important;
     font-weight: bold;
     margin-bottom: 8px;
-    margin-left: -10px;
 }
 /* edits apperance of starred pages */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
@@ -762,7 +765,7 @@ body {
 }
 
 /* ------------------------*/
-/*     SEARCH & ICONS      */
+/*     #SEARCH & ICONS     */
 /* ------------------------*/
 .bp3-input,
 .bp3-input[readonly] {
@@ -1170,6 +1173,15 @@ blockquote small {
     visibility: hidden;
 }
 
+/* Inline Select, thanks eatondpe for spotting this! */
+select {
+    background-color: var(--select-bg-color) !important;
+    border: 1px solid var(--select-border-color)!important;
+    border-radius: 4px;
+    padding: 1px 1px 2px 2px;
+    font-size: 0.95em;
+}
+
 .rm-emoji-button {
     background-color: var(--emoji-bg) !important;
     border: var(--emoji-border) !important;
@@ -1300,18 +1312,17 @@ blockquote small {
 }
 
 /* -------------------------- */
-/*         SEARCH BAR         */
+/*         #SEARCH BAR        */
 /* -------------------------- */
 #find-or-create-input {
     /* search form*/
     opacity: 0;
-    z-index: 10000;
-    /* bring in front of icon to keep clickable */
+    z-index: 10000; /* bring in front of icon to keep clickable */
     cursor: pointer;
     box-shadow: 0 0 0 100VW rgba(15, 15, 15, 0.0);
     /* CRL EDIT */
 }
-/* change search button size CRL EDIT*/
+/* change search button size CRL */
 #find-or-create-input.bp3-input {
     padding: 0px 14px;
 }
@@ -1328,11 +1339,8 @@ blockquote small {
 
 #find-or-create-input {
     border-radius: 3px 3px 0px 0px;
-    /* CRL EDIT */
     border: 1px solid #3e3e3e;
-    /* CRL EDIT */
-    box-shadow: 0 0 0 100VW rgba(15, 15, 15, 0.3);
-    /* CRL EDIT */
+    box-shadow: 0 0 0 100VH rgba(15, 15, 15, 0.3); /* Changed from 100VW to 100VH */
     font-size: 18px;
     padding: 20px 20px;
     z-index: 10000;
@@ -1352,13 +1360,10 @@ blockquote small {
 .rm-find-or-create-wrapper .bp3-popover {
     z-index: 10000;
     border-radius: 0px 0px 3px 3px;
-    /* CRL EDIT */
     border: 1px solid #3e3e3e;
-    /* CRL EDIT */
     overflow: hidden;
     background: var(--left-sidebar-bg);
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
-    /* CAL ROBERT ADDITION */
 }
 
 /* prevent coloured menu */
@@ -1372,7 +1377,6 @@ blockquote small {
     top: 152px;
     width: 600px;
     left: calc(50% + 265px);
-    /* CRL EDIT */
     z-index: 999999;
 }
 
