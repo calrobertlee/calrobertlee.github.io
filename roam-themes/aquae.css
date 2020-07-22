@@ -317,22 +317,25 @@ div.roam-center > div:first-child {
 
 /* INTERNAL PAGE LINK color */
 .rm-page-ref-link-color {
-    color: var(--page-link-color);
+  color: var(--page-link-color);
+}
+.rm-page-ref-link-color strong{ /* bold link */
+  color: var(--page-link-color);
 }
 /* internal link hover state */
 .rm-page-ref-link-color:focus,
 .rm-page-ref-link-color:hover {
-    color: var(--page-link-color);
-    text-decoration: none; /* EXPERIMENTING WITH HOVER STATE */
+  color: var(--page-link-color);
+  text-decoration: none; /* EXPERIMENTING WITH HOVER STATE */
 }
 /* BRACKETS COLOR */
 .rm-page-ref-brackets {
-    color: var(--page-bracket-color);
+  color: var(--page-bracket-color);
 }
 /* EXTERNAL LINK color */
 .roam-app a {
-    color: var(--external-link-color);
-    text-decoration: none; /* EXPERIMENTING WITH HOVER STATE */
+  color: var(--external-link-color);
+  text-decoration: none; /* EXPERIMENTING WITH HOVER STATE */
 }
 /* EXTERNAL LINK color — HOVER STATE */
 .roam-app a:focus,
