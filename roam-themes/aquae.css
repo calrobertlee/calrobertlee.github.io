@@ -119,7 +119,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
   --left-sidebar-border-right: none;
   --left-sidebar-divider-color: none;
   --right-sidebar-bg: #ffffff;
-  --right-sidebar-border-left: 1px solid hsl(220, 9%, 93%); /* changed to 1px */
+  --right-sidebar-border-left: 2px solid hsl(220, 9%, 91%);
   --divider-color: #cfcfcf;
   --allpage-bottom-border-color: #ececec;
   --reference-item-bg: #fdfdfd;
