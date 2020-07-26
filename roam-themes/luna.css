@@ -17,7 +17,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
 :root {
     /* PRIMARY FONTS */
     --main-font: 'Inter', sans-serif;
-    --main-font-color: #DCDDDE;
+    --main-font-color: #e5e6e6;
     --main-font-size: 1.0em;
 
     /* FONT COLORS */
@@ -32,7 +32,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --strong: #DCDEDD;
     --emphasis: #DCDEDD;
     --highlight-font-color: #F4F4F4;
-    --highlight-background-color: #887117;
+    --highlight-background-color: #8C6C2A;
     --highlight-link-color: #F4F4F4;
     --highlight-padding: 4px 5px 4px 5px;
     --reference-header-color: #2a323a;
@@ -53,7 +53,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --tagHover-border: 1px solid rgba(68, 70, 72, .53);
 
     --bullet-color: #dedede;
-    --bullet-closed: #528ed24d;
+    --bullet-closed: #9de4fa4a;
     --tree-vertline: 2px solid #26292c;
     --bullet-position: ;
     /*not needed for now*/
@@ -68,11 +68,11 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --checkedmark-border: 1px solid #4d525600;
     --checkedmark-bg-color: #9de4fa;
 
-    --code-bg: #222629;
+    --code-bg: hsl(209, 9%, 17%);
     --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
     --code-font-color: #DCDEDD;
     --code-font-size: 1.0em;
-    --code-border: 1px solid #34373b;
+    --code-border: 1px solid hsl(214, 6%, 25%);
 
     --codemirror-bg: #222629;
     --codemirror-border-color: #323438;
@@ -114,9 +114,9 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --divider-color: #43474a;
     --allpage-bottom-border-color: #2d3133;
 
-    --reference-item-bg: #212325;
+    --reference-item-bg: hsl(194, 3%, 12%);
     --reference-item-border-radius: 6px;
-    --reference-item-border: 1px solid rgb(39, 42, 45);
+    --reference-item-border: 1px solid hsl(194, 0%, 18%);
 
     --block-highlight: #353a40;
     --block-highlight-bg: #34641F;
@@ -143,11 +143,9 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
 
     --block-ref-bg: none;
     --block-ref-hover: none;
-    --block-ref-hover-bg: #353a40;
+    --block-ref-hover-bg: hsl(194, 9%, 23%);
     --block-ref-border-bottom: #393d42;
 
-    --pages-row-highlight: ;
-    /* NEEDS LOVE */
     --pages-header-row: #1E2022;
     --pages-mentions-level-bg: #3c96ff;
     --pages-mentions-level1-bg: #3d71ff;
@@ -157,9 +155,8 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --icon-color: #7d8386;
     --icon-bg-hover: #dadfe61c;
     --icon-color-hover: #dae0e4;
-    /* LEAVING IT THE SAME FOR NOW (as --icon-color) */
     --minirightbar-icon-color: #454d52;
-    /* Icon color's for far right topbar icons, which are now in a vertical column */
+
     /* Misc */
     --kanban-board-bg: #212326;
     --kanban-board-border: 1px solid #32343880;
@@ -1331,8 +1328,8 @@ select {
 
 #find-or-create-input {
     border-radius: 3px 3px 0px 0px;
-    border: 1px solid #3e3e3e;
-    box-shadow: 0 0 0 100VH rgba(15, 15, 15, 0.3); /* Changed from 100VW to 100VH */
+    border: 1px solid #484848;
+    box-shadow: 0 0 0 100VH rgba(15, 15, 15, 0.4); /* Changed from 100VW to 100VH */
     font-size: 18px;
     padding: 20px 20px;
     z-index: 10000;
@@ -1352,7 +1349,7 @@ select {
 .rm-find-or-create-wrapper .bp3-popover {
     z-index: 10000;
     border-radius: 0px 0px 3px 3px;
-    border: 1px solid #3e3e3e;
+    border: 1px solid #484848;
     overflow: hidden;
     background: var(--left-sidebar-bg);
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
