@@ -1349,7 +1349,7 @@ select {
     border-radius: 0px 0px 3px 3px;
     border: 1px solid #484848;
     overflow: hidden;
-    background: var(--left-sidebar-bg);
+    background: #1c1c1c;
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
 }
 
@@ -1384,7 +1384,7 @@ select {
     color: var(--main-font-color);
 }
 .bp3-input {
-    background-color: var(--left-sidebar-bg) !important;
+    background-color: #1c1c1c !important;
     color: var(--main-font-color) !important;
 }
 .bp3-input::placeholder {
