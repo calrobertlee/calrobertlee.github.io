@@ -21,9 +21,9 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --main-font-size: 1.0em;
 
     /* FONT COLORS */
-    --page-link-color: #939296;
+    --page-link-color: #9de4fa;
     --page-bracket-color: #5B5B5B;
-    --external-link-color: #939296;
+    --external-link-color: #9de4fa;
     --daily-notes-link-color: none;
     --sidebar-link-color: none;
     --h1-font-color: #c9d1d9;
@@ -32,7 +32,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --strong: #DCDEDD;
     --emphasis: #DCDEDD;
     --highlight-font-color: #F4F4F4;
-    --highlight-background-color: #34641F;
+    --highlight-background-color: #887117;
     --highlight-link-color: #F4F4F4;
     --highlight-padding: 4px 5px 4px 5px;
     --reference-header-color: #2a323a;
@@ -66,7 +66,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --checkmark-border: 1px solid hsl(207, 6%, 34%);
     --checkmark-bg-color: rgb(27, 29, 30);
     --checkedmark-border: 1px solid #4d525600;
-    --checkedmark-bg-color: #7F6DF2;
+    --checkedmark-bg-color: #9de4fa;
 
     --code-bg: #222629;
     --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
@@ -102,13 +102,13 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --ref-count-font-size: 12px;
 
     /* BACKGROUNDS & OUTLINES */
-    --body-bg: #202020; /* DONE */
+    --body-bg: #1c1c1c; /* DONE */
     --topbar-bg: rgba(30, 32, 34, 0);
     --topbar-border-bottom: 0px solid #32343880;
     --left-sidebar-bg: #161616; /* DONE */
     --left-sidebar-border-right: 0px solid rgb(54, 56, 60);
     --left-sidebar-divider-color: #45474a00;
-    --right-sidebar-bg: #202020; /* DONE */
+    --right-sidebar-bg: #1c1c1c; /* DONE */
     /*#1E2022*/
     --right-sidebar-border-left: 2px solid hsla(220, 6%, 5%, .31);
     --divider-color: #43474a;
@@ -183,11 +183,11 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --hr-color: #434547;
 
     --blockquote-font-color: #ebebeb;
-    --blockquote-border-color: #7562f4;
+    --blockquote-border-color: #5bd8ff;
     --blockquote-bg: #1E2022;
     --blockquote-cite: #ebebeb;
 
-    --encrypted-font-color: #513bda;
+    --encrypted-font-color: #5b9cb0;
     --encrypted-bg: hsl(212, 14%, 15%);
     --encrypted-font-size: 13px;
     --encrypted-font-weight: 300;
