@@ -3,7 +3,7 @@
 Theme:      Roam Luna Theme
 Edits by:   Cal Robert Lee (https://www.calrobert.com/)
 Colors by:  Cal Robert Lee
-Version:    v1.1.1
+Version:    v1.1.2
 Import:    @import url('https://calrobertlee.github.io/roam-themes/luna.css');
 
 Updates:    - Release of higher contrast dark theme
@@ -103,10 +103,10 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --body-bg: #1c1c1c; /* DONE */
     --topbar-bg: rgba(30, 32, 34, 0);
     --topbar-border-bottom: 0px solid #32343880;
-    --left-sidebar-bg: #161616; /* DONE */
+    --left-sidebar-bg: #161616;
     --left-sidebar-border-right: 0px solid rgb(54, 56, 60);
     --left-sidebar-divider-color: #45474a00;
-    --right-sidebar-bg: #1c1c1c; /* DONE */
+    --right-sidebar-bg: #1c1c1c;
     /*#1E2022*/
     --right-sidebar-border-left: 2px solid hsla(220, 6%, 5%, .31);
     --divider-color: #43474a;
@@ -1384,11 +1384,11 @@ select {
     color: var(--main-font-color);
 }
 .bp3-input {
-    background-color: #1c1c1c !important;
+    background-color: var(--body-bg) !important;
     color: var(--main-font-color) !important;
 }
 .bp3-input::placeholder {
-    background-color: var(--left-sidebar-bg) !important;
+    background-color: var(--body-bg) !important;
     color: var(--main-font-color) !important;
     opacity: 0.3;
 }
