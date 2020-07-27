@@ -42,14 +42,14 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --sidebar-font-hover-color: #8f8f8f;
     --sidebar-shorcut-color: #9f9f9f52;
 
-    --tag-font-color: #515355;
-    --tag-bg-color: rgb(36, 39, 42);
+    --tag-font-color: #5a5d5e;
+    --tag-bg-color: #222526;
     --tag-border-radius: 10px;
-    --tag-border: 1px solid #35373996;
+    --tag-border: 1px solid #383c3d96;
     --tag-padding: 1px 5px 2px;
-    --tagHover-font-color: hsl(210, 3%, 29%);
-    --tagHover-bg-color: rgb(45, 48, 51);
-    --tagHover-border: 1px solid rgba(68, 70, 72, .53);
+    --tagHover-font-color: #595d5f;
+    --tagHover-bg-color: #2e3233;
+    --tagHover-border: 1px solid #43464787;
 
     --bullet-color: #dedede;
     --bullet-closed: #9de4fa4a;
@@ -64,7 +64,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch
     --checkmark-border: 1px solid hsl(207, 6%, 34%);
     --checkmark-bg-color: rgb(27, 29, 30);
     --checkedmark-border: 1px solid #4d525600;
-    --checkedmark-bg-color: #9de4fa;
+    --checkedmark-bg-color: hsl(194, 90%, 80%);
 
     --code-bg: hsl(209, 9%, 17%);
     --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
