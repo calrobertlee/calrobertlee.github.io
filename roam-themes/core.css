@@ -17,15 +17,16 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
 /*---------------------------------- 
     #BASIC FONTS   
 ------------------------------------*/
+.rm-title-textarea,
 .roam-body .roam-app h1.rm-title-display { /* page title */
     font-weight: 500;
-    font-size: 2.6em;
+    font-size: 40px;
     font-family: var(--main-font);
     color: var(--title-color) !important;
 }
 .flex-h-box.window-headers .level2 a { /* right sidebar page title */
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: var(--main-font);
     color: var(--ref-title-color) !important;
 }
@@ -56,7 +57,8 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
   .roam-app strong{
       color: var(--strong);
   }
-  .roam-app em {
+  .roam.rm-title-textarea {
+app em {
     color: var(--emphasis);
   }
   */
@@ -433,11 +435,14 @@ CLEAN    #RIGHT SIDEBAR
 }
 #roam-right-sidebar-content > * { /* right sidebar divider padding and margin */
     margin: 0px 0px 0 20px !important;
-    padding: 15px 0px 10px 0px;
+    padding: 10px 0px 10px 0px !important;
 }
-  /* right sidebar divider apperance */
-#roam-right-sidebar-content [style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
+  /* right sidebar divider */
+#roam-right-sidebar-content [style*="margin-left: 16px; margin-right: 16px;"] {
     border-bottom: 1px solid var(--divider-color) !important;
+    padding: 5px 0px; /* padding around divider */
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
   /* header for sidebar page OPENED — moves it left 35px */
 #roam-right-sidebar-content .flex-h-box .bp3-button.bp3-minimal.bp3-icon-minus.bp3-small {
@@ -489,7 +494,6 @@ CLEAN    #RIGHT SIDEBAR
 /* top right icon color */
 .roam-topbar .bp3-button[class*="bp3-icon-"]::before {
     color: var(--minirightbar-icon-color);
-
 }
 /* top right toolbar filter icon color */
 .roam-topbar .bp3-button .bp3-icon, .bp3-button .bp3-icon-standard, .bp3-button .bp3-icon-large { /* filter icon color */
@@ -498,6 +502,9 @@ CLEAN    #RIGHT SIDEBAR
 /* fix sync/saving position */
 .rm-saving-icon { 
   margin-left: -1px;
+}
+.bp3-icon-unpin:before {
+    color: var(--pin-color) !important;
 }
 
 /*--- Block References ---*/
