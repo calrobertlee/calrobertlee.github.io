@@ -17,29 +17,33 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
 /*---------------------------------- 
     #BASIC FONTS   
 ------------------------------------*/
-.roam-body .roam-app h1.rm-title-display { /* title font */
+.roam-body .roam-app h1.rm-title-display { /* page title */
     font-weight: 500;
-    font-size: 2.55em;
+    font-size: 2.6em;
     font-family: var(--main-font);
-    color: var(--main-font-color) !important;
+    color: var(--header-color) !important;
+}
+.flex-h-box.window-headers .level2 a { /* right sidebar page title */
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: var(--main-font);
+    color: var(--page-link-color) !important;
 }
 .roam-body .roam-app h1 { /* h1 */
-    font-weight: 300;
-    font-size: 1.8em;
     font-family: var(--main-font);
-    color: var(--main-font-color) !important;
+    color: var(--header-color) !important;
 }
 .rm-level2 { /* h2 */
-    font-weight: 400;
-    font-size: 1.3em;
+    font-weight: 500;
+    font-size: 1.4em;
     font-family: var(--main-font);
-    color: var(--h2-font-color);
+    color: var(--header-color);
 }
 .rm-level3 { /* h3 */
-    font-weight: 400;
-    font-size: 1.2em;
+    font-weight: 500;
+    font-size: 1.15em;
     font-family: var(--main-font);
-    color: var(--h3-font-color);
+    color: var(--header-color);
 }
 .roam-app { /* main body */
     font-weight: 400;
