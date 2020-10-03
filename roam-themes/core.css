@@ -13,7 +13,7 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
             - To install visit: https://github.com/calrobertlee/roam-css-styles
 */
 
-  
+
 /*---------------------------------- 
     #BASIC FONTS   
 ------------------------------------*/
@@ -21,13 +21,13 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
     font-weight: 500;
     font-size: 2.6em;
     font-family: var(--main-font);
-    color: var(--header-color) !important;
+    color: var(--title-color) !important;
 }
 .flex-h-box.window-headers .level2 a { /* right sidebar page title */
     font-weight: 300;
     font-size: 1.1em;
     font-family: var(--main-font);
-    color: var(--page-link-color) !important;
+    color: var(--ref-title-color) !important;
 }
 .roam-body .roam-app h1 { /* h1 */
     font-family: var(--main-font);
@@ -51,8 +51,6 @@ Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twit
     font-family: var(--main-font);
     color: var(--main-font-color) !important;
 }
-
-
 
   /* BOLD TEXT  not sure if used 
   .roam-app strong{
@@ -428,14 +426,14 @@ CLEAN    #RIGHT SIDEBAR
 }
 #roam-right-sidebar-content { /* sidebar spacing */
     margin-top: -50px;
-    padding: 40px 0px 0px 30px;
+    padding: 40px 0px 0px 5px;
 }
 #right-sidebar > div:nth-child(1)  { /* hides close sidebard button */
     visibility: hidden;
 }
 #roam-right-sidebar-content > * { /* right sidebar divider padding and margin */
     margin: 0px 0px 0 20px !important;
-    padding: 15px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
 }
   /* right sidebar divider apperance */
 #roam-right-sidebar-content [style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
@@ -443,12 +441,12 @@ CLEAN    #RIGHT SIDEBAR
 }
   /* header for sidebar page OPENED — moves it left 35px */
 #roam-right-sidebar-content .flex-h-box .bp3-button.bp3-minimal.bp3-icon-minus.bp3-small {
-    margin-left: -35px;
+    margin-left: -30px;
     margin-right: 10px;
 }
   /* header for sidebar page COLLAPSED — moves it right */
 #roam-right-sidebar-content .flex-h-box .bp3-button.bp3-minimal.bp3-icon-plus.bp3-small {
-    margin-left: -35px;
+    margin-left: -30px;
     margin-right: 20px;
 }
 
@@ -697,9 +695,9 @@ CLEAN    #KANBAN & TABLES
     border: var(--table-border);
 }
   
-/*------------------------------------------------------------------- 
-CLEAN    #LOADING ANIMATION - https://codepen.io/ivillamil/pen/dokmG 
----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+CLEAN    #LOADING ANIMATION ——  https://codepen.io/ivillamil/pen/dokmG 
+-------------------------------------------------------------------------*/
 .loading-astrolabe {
     height: 50px;
     width: 50px;
