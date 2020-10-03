@@ -426,14 +426,14 @@ CLEAN    #RIGHT SIDEBAR
 }
 #roam-right-sidebar-content { /* sidebar spacing */
     margin-top: -50px;
-    padding: 40px 0px 0px 5px;
+    padding: 40px 0px 0px 30px;
 }
 #right-sidebar > div:nth-child(1)  { /* hides close sidebard button */
     visibility: hidden;
 }
 #roam-right-sidebar-content > * { /* right sidebar divider padding and margin */
-    margin: 0px 0px 0px 20px !important;
-    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0 20px !important;
+    padding: 15px 0px 10px 0px;
 }
   /* right sidebar divider apperance */
 #roam-right-sidebar-content [style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
@@ -441,12 +441,12 @@ CLEAN    #RIGHT SIDEBAR
 }
   /* header for sidebar page OPENED — moves it left 35px */
 #roam-right-sidebar-content .flex-h-box .bp3-button.bp3-minimal.bp3-icon-minus.bp3-small {
-    margin-left: -30px;
+    margin-left: -35px;
     margin-right: 10px;
 }
   /* header for sidebar page COLLAPSED — moves it right */
 #roam-right-sidebar-content .flex-h-box .bp3-button.bp3-minimal.bp3-icon-plus.bp3-small {
-    margin-left: -30px;
+    margin-left: -35px;
     margin-right: 20px;
 }
 
