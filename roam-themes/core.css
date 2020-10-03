@@ -191,7 +191,7 @@ CLEAN    #TODO
   position: absolute;
   top: var(--checkmark-top);
   left: var(--checkmark-left);
-  height: var(--checkmarl-height);
+  height: var(--checkmark-height);
   border-radius: var(--checkmark-border-radius);
   width: var(--checkmark-width);
   border: var(--checkedmark-border);
