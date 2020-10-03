@@ -432,7 +432,7 @@ CLEAN    #RIGHT SIDEBAR
     visibility: hidden;
 }
 #roam-right-sidebar-content > * { /* right sidebar divider padding and margin */
-    margin: 0px 0px 0 20px !important;
+    margin: 0px 0px 0px 20px !important;
     padding: 10px 0px 10px 0px;
 }
   /* right sidebar divider apperance */
