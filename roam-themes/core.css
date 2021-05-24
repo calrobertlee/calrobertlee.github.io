@@ -1,10 +1,9 @@
 /*
 Theme:      Core Theme for Aquae, Nox, & Lux Roam themes
-Version:    1.2.2
+Version:    1.2.3
 By:         Cal Robert Lee (https://www.calrobert.com/)
 
-Fixes:      - searchbar results z-index
-            - topbar icon positions when selecting search
+Fixes:      - Merged pull request #30 (https://github.com/calrobertlee/roam-css-styles/pull/30)
 
 Notes:      - Thanks to the supportive people on r/RoamResearch, GitHub and Twitter!
             - I have been changing a lot of thing in my professional career! Which is the reason for some of the delays
@@ -943,15 +942,7 @@ padding:  var(--s1);
     z-index: 99999;
 }
 
-/* TOP RIGHT TOOLBAR ICONS */
-
-.rm-topbar > * {
-    position: absolute;
-}
-
-#app > div > div > div.flex-h-box > div.roam-main > div.rm-files-dropzone > div > span:nth-child(7) > span > span > span
-{padding-top: 25px}
-  
+/* TOP RIGHT TOOLBAR ICONS */  
 .rm-topbar > .bp3-popover-wrapper {
     width: 490px; /* CRL EDIT */
     flex-direction: column; /* CRL EDIT */
